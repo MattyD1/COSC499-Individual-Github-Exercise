@@ -35,6 +35,15 @@ def mergeSort(array):
       j+=1
       l+=1
 
+
+
+def printList(array):
+  print("Sorted Array: ")
+  for i in range(len(array)):
+      print(array[i], end=",")
+
+
 if __name__ == '__main__':
-  testArray = [1, 4, 2, 6, 10, 12, 44]
-  mergeSort(testArray)
+  # testArray = UserInput()
+  # mergeSort(testArray)
+  # printList(testArray)
