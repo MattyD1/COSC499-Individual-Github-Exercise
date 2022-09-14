@@ -35,7 +35,19 @@ def mergeSort(array):
       j+=1
       l+=1
 
+def UserInput():
+  a = []
+  i = 0
 
+  n = int(input("Add integer, enter a negative to stop adding more numbers"))
+
+  while n >= 0:
+    a.append(n)
+    n = int(input("Add integer, enter a negative to stop adding more numbers"))
+    i+=1
+
+  print()
+  return a
 
 def printList(array):
   print("Sorted Array: ")
@@ -44,6 +56,6 @@ def printList(array):
 
 
 if __name__ == '__main__':
-  # testArray = UserInput()
-  # mergeSort(testArray)
-  # printList(testArray)
+  testArray = UserInput()
+  mergeSort(testArray)
+  printList(testArray)
