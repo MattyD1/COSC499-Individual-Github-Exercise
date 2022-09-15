@@ -3,19 +3,6 @@ import unittest.mock
 import mergeSort
 
 
-def func():
-    a = []
-    i = 0
-    n = 0
-    # n = int(input("Add integer, enter a negative to stop adding more numbers"))
-
-    while n >= 0:
-        a.append(n)
-        n = int(input())
-        i += 1
-    return a
-
-
 class SimpleTest(unittest.TestCase):
 
     # Returns True or False.
